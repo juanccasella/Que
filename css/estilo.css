@@ -1,0 +1,137 @@
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+header, footer {
+    font-family: sans-serif;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #cc6666;
+    color: #ffff99;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Estilos para el menú de navegación */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color:#ffff99;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+#top {
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+/* Estilos para el menú de navegación dentro del encabezado */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+/* Estilos para el aside (barra lateral) */
+aside {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+aside input[type="text"], aside button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+aside li {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+/* Estilos para el contenido principal de recetas */
+section {
+    flex: 4;
+    padding: 20px 30px 30px 30px;
+}
+
+section h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+section article {
+    margin-bottom: 30px;
+}
+
+section iframe {
+    width: 100%;
+    height: 315px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #cc6666;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para el enlace "Ir arriba" */
+footer h2 a {
+    display: block;
+    padding: 5px;
+
+}
+
+/* Estilos para el clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Estilos generales para enlaces */
+a {
+    color: #ffff99;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666;
+}
+
+
