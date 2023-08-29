@@ -1,0 +1,190 @@
+/* Estilo/Styles.css */
+body {
+  width: 100%;
+  background-color: #cad9ca;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  transition: max-width 0.5s; /* Transición suave para cambios de tamaño */
+}
+
+.navbar {
+  background-color: #495453;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0; /* Eliminamos los márgenes */
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #a7e3c1;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: #a7e3c1;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 10px;
+  text-align: center;
+  flex-grow: 1;
+  justify-content: flex-end; /* Alineamos a la derecha */
+}
+
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Cambiamos a alineación al centro */
+  background-color: #495453;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+  color: #495453; /* Cambio del color */
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.menu li:hover {
+  transform: scale(1.1);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-left,
+.aside-right {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #cad9ca;
+}
+
+.aside-left {
+  flex: 0 0 20%;
+}
+
+.aside-right {
+  flex: 0 0 70%;
+}
+
+.section {
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  flex: 0 0 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.article {
+  flex: 1;
+  min-width: calc(50% - 20px);
+}
+
+#footer {
+  background-color: #495453;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #a7e3c1;
+}
+
+a {
+  text-decoration: none;
+  color: #a7e3c1;
+}
+
+.btn a {
+  color: #000; /* Cambiar el color a negro */
+}
+
+/* Eliminar los puntos antes de cada palabra en la lista */
+.lista {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Agregar efecto de sombreado a los elementos li de la lista */
+.lista li {
+  margin-bottom: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lista li:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .menu-icon {
+    margin-left: 20px;
+  }
+
+  /* Mostrar elementos li dentro de .menu en media query */
+  .menu.active .menu-item {
+    display: block;
+  }
+  
+  /* Ocultar elementos li dentro de .menu en media query */
+  .navbar .menu-item {
+    display: none;
+  }
+}
