@@ -1,7 +1,7 @@
 
 body {
   width: 100%;
-  background-color: #cad9ca;
+  background-color: #EFFBEF;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -15,6 +15,7 @@ body {
 }
 
 .navbar {
+  text-align: center;
   background-color: #495453;
   display: flex;
   justify-content: space-between;
@@ -134,6 +135,7 @@ body {
 a {
   text-decoration: none;
   color: #a7e3c1;
+  text-align: center;
 }
 
 .btn a {
